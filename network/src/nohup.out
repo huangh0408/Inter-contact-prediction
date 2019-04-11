@@ -1,0 +1,27 @@
+]0;IPython: Inpainting/src2019-03-28 19:53:29.857349: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-03-28 19:53:30.403921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:82:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-03-28 19:53:30.403987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-03-28 19:53:30.768092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-03-28 19:53:30.768159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-03-28 19:53:30.768168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-03-28 19:53:30.768480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7824 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:82:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ../models/protein/model-4999
+/home/huanghe/anaconda2/envs/tensorflow2.7/lib/python2.7/site-packages/skimage/transform/_warps.py:105: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+/home/huanghe/anaconda2/envs/tensorflow2.7/lib/python2.7/site-packages/skimage/transform/_warps.py:110: UserWarning: Anti-aliasing will be enabled by default in skimage 0.15 to avoid aliasing artifacts when down-sampling images.
+  warn("Anti-aliasing will be enabled by default in skimage 0.15 to "
+test.protein_3_28.py:94: DeprecationWarning: `imresize` is deprecated!
+`imresize` is deprecated in SciPy 1.0.0, and will be removed in 1.3.0.
+Use Pillow instead: ``numpy.array(Image.fromarray(arr).resize())``.
+  rec_2=misc.imresize(rec_hid[:,:,0],[y,xx],interp='nearest')
+test.protein_3_28.py:95: DeprecationWarning: `imresize` is deprecated!
+`imresize` is deprecated in SciPy 1.0.0, and will be removed in 1.3.0.
+Use Pillow instead: ``numpy.array(Image.fromarray(arr).resize())``.
+  rec_3=misc.imresize(rec_hid[:,:,1],[y,xx],interp='nearest')
+test.protein_3_28.py:96: DeprecationWarning: `imresize` is deprecated!
+`imresize` is deprecated in SciPy 1.0.0, and will be removed in 1.3.0.
+Use Pillow instead: ``numpy.array(Image.fromarray(arr).resize())``.
+  rec_4=misc.imresize(rec_hid[:,:,2],[y,xx],interp='nearest')
